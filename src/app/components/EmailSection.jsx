@@ -7,7 +7,7 @@ const EmailSection = () => {
     <section
       name='contact'
       id="contact"
-      className="w-full h-screen grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="mt-[550px] w-full h-[700px] grid md:grid-cols-2  md:my-12 py-24 gap-4 relative "
     >
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">

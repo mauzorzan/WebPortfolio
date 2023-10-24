@@ -5,7 +5,7 @@
   "homepage": "https://mauzorzan.github.io/WebPortfolio/",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d .next",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -14,6 +14,7 @@
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "framer-motion": "^10.16.4",
+    "lodash": "^4.17.21",
     "next": "^13.5.4",
     "react": "^18",
     "react-animated-numbers": "^0.16.0",
@@ -22,12 +23,14 @@
     "react-icons": "^4.11.0",
     "react-scroll": "^1.8.9",
     "react-type-animation": "^3.1.0",
+    "react-vertical-timeline-component": "^3.6.0",
     "resend": "^1.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.8.3",
     "@types/react": "18.2.24",
     "@types/react-scroll": "^1.8.8",
+    "@types/react-vertical-timeline-component": "^3.3.5",
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",

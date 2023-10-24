@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ReactCardFlip from 'react-card-flip'
-import {SiJavascript, SiTailwindcss, SiNextdotjs, SiHtml5, SiPython, SiDjango, SiGit, SiGithub, SiTestrail} from 'react-icons/si'
+import {SiJavascript, SiTailwindcss, SiNextdotjs, SiHtml5, SiPython, SiDjango, SiGit, SiGithub, SiTestrail, SiMongodb} from 'react-icons/si'
 import {FaReact} from 'react-icons/fa'
 
 
@@ -33,14 +33,15 @@ const SkillsCards = () => {
                         <div className='mr-2'>React</div>
                         <FaReact />
                     </div>
+                        <div className='flex items-center'>
+                        <div className='mr-2'>NextJS</div>
+                        <SiNextdotjs />
+                    </div>
                     <div className='flex items-center mb-2'>
                         <div className='mr-2'>Tailwind</div>
                         <SiTailwindcss />
                     </div>
-                    <div className='flex items-center'>
-                        <div className='mr-2'>NextJS</div>
-                        <SiNextdotjs />
-                    </div>
+
                     </div>
 
 
@@ -57,6 +58,10 @@ const SkillsCards = () => {
                     <div className='flex items-center mb-2'>
                         <div className='mr-2'>Python</div>
                         <SiPython />
+                    </div>
+                    <div className='flex items-center mb-2'>
+                        <div className='mr-2'>MongoDB</div>
+                        <SiMongodb />
                     </div>
                     <div className='flex items-center mb-2'>
                         <div className='mr-2'>Django</div>

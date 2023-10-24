@@ -9,7 +9,7 @@ import {Link} from 'react-scroll'
 
 const HeroSection = () => {
   return (
-    <section name='home' className='w-full h-screen lg:py-16'>
+    <section name='home' className='w-full py-30 mb-[150px]'>
       <div >
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -38,7 +38,8 @@ const HeroSection = () => {
           </h1>
           <div>
           <Link to="projects" smooth={true} duration={500}>
-                <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>View Work
+          <button className='text-white group border-2 px-4 sm:px-6 py-2 sm:py-3 my-2 flex items-center justify-center sm:justify-start hover:bg-pink-600 hover:border-pink-600'>
+                View Work
                 <span className='group-hover:rotate-90 duration-300'>
                 <HiArrowNarrowRight className='ml-3' />
                 </span>
