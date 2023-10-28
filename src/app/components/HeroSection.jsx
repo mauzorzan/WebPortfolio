@@ -4,12 +4,15 @@ import {HiArrowNarrowRight} from 'react-icons/hi'
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import {Link} from 'react-scroll'
+import ParticlesContainer from './ParticlesContainer'
 
 
 
 const HeroSection = () => {
   return (
     <section name='home' className='w-full py-30 mb-[150px]'>
+      <ParticlesContainer/>
+      <div style={{ position: 'relative', zIndex: '1' }}>
       <div >
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -54,6 +57,7 @@ const HeroSection = () => {
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
         </motion.div>
+      </div>
       </div>
     </section>
   );
