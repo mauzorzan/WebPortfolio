@@ -19,21 +19,38 @@ const projectsData = [
     title: "GymHub",
     description: "Built with React, this dynamic and user-friendly platform seamlessly integrates with RapidAPI, providing instant access to a vast database of exercises.",
     image: "/images/projects/GymHub.jpeg",
-    tag: ["All", "Front-end"],
+    tag: ["All"],
     gitUrl: "https://github.com/mauzorzan/GymHub/",
     previewUrl: "https://mauzorzan.github.io/GymHub/",
   },
   {
     id: 3,
+    title: "PriceTracker",
+    description: "This Amazon web scraper shows the information of a product and its price history from its Amazon link. Using CronJob, it will periodically check the price and send an alert to the user when the price is lowest.",
+    image: "/images/projects/pricetracker.png",
+    tag: ["All", "Full-Stack"],
+    gitUrl: "https://github.com/mauzorzan/PriceTracker",
+    previewUrl: "https://mauzorzan-pricetracker.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "AlgoVisualizer",
+    description: "A web-based pathfinding visualizer that allows users to interactively explore and visualize various pathfinding algorithms and maze generation techniques. This was submitted as my final project for my Data Structures and Algorithms class",
+    image: "/images/projects/algovisualizer.png",
+    tag: ["All"],
+    gitUrl: "https://github.com/mauzorzan/AlgoVisualizer",
+    previewUrl: "https://ysc2229-s1-23.github.io/final-project-mauzorzan/",
+  },
+  {
+    id: 5,
     title: "Django Chatbot",
     description: "This interactive chat platform that combines Django with the OpenAI API to provide user authentication and chat history storage.",
     image: "/images/projects/Chatbot.png",
-    tag: ["All", "Back-end"],
+    tag: ["All"],
     gitUrl: "https://github.com/mauzorzan/ChatBot",
-    previewUrl: "/",
+    previewUrl: "https://github.com/mauzorzan/ChatBot",
   },
 ];
-
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
@@ -53,7 +70,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section name='projects' className='w-full h-screen text-white xs:mb-[600px] lg:py-16 ' id="projects">
+    <section name='projects' className='w-full h-auto text-white py-16' id="projects">
       <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>
         My Projects
       </h2>
@@ -68,18 +85,8 @@ const ProjectsSection = () => {
           name="Full-Stack"
           isSelected={tag === "Full-Stack"}
         />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Front-end"
-          isSelected={tag === "Front-end"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Back-end"
-          isSelected={tag === "Back-end"}
-        />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
