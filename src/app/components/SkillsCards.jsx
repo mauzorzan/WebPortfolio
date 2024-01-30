@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ReactCardFlip from 'react-card-flip'
-import {SiJavascript, SiTailwindcss, SiNextdotjs, SiHtml5, SiPython, SiDjango, SiGit, SiGithub, SiTestrail, SiMongodb} from 'react-icons/si'
+import {SiJavascript, SiTailwindcss, SiNextdotjs, SiPython, SiDjango, SiGit, SiGithub, SiMongodb, SiSpring, SiCsharp, SiDocker, SiKubernetes, SiTypescript, SiAmazonaws} from 'react-icons/si'
 import {FaReact} from 'react-icons/fa'
 
 
@@ -26,8 +26,8 @@ const SkillsCards = () => {
                         <SiJavascript />
                     </div>
                     <div className='flex items-center mb-2'>
-                        <div className='mr-2'>HTML</div>
-                        <SiHtml5 />
+                        <div className='mr-2'>Typescript</div>
+                        <SiTypescript />
                     </div>
                     <div className='flex items-center mb-2'>
                         <div className='mr-2'>React</div>
@@ -67,6 +67,14 @@ const SkillsCards = () => {
                         <div className='mr-2'>Django</div>
                         <SiDjango />
                     </div>
+                    <div className='flex items-center mb-2'>
+                        <div className='mr-2'>Spring</div>
+                        <SiSpring />
+                    </div>
+                    <div className='flex items-center mb-2'>
+                        <div className='mr-2'>.NET</div>
+                        <SiCsharp />
+                    </div>
                     
                     </div>
             </ReactCardFlip>
@@ -88,8 +96,16 @@ const SkillsCards = () => {
                         <SiGithub />
                     </div>
                     <div className='flex items-center mb-2'>
-                        <div className='mr-2'>TestRail</div>
-                        <SiTestrail />
+                        <div className='mr-2'>Docker</div>
+                        <SiDocker />
+                    </div>
+                    <div className='flex items-center mb-2'>
+                        <div className='mr-2'>Kubernetes</div>
+                        <SiKubernetes />
+                    </div>
+                    <div className='flex items-center mb-2'>
+                        <div className='mr-2'>AWS</div>
+                        <SiAmazonaws />
                     </div>
                     </div>
             </ReactCardFlip>
